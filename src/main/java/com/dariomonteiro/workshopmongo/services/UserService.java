@@ -33,6 +33,7 @@ public class UserService {
 		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado."));
 	}
 	
+<<<<<<< HEAD
 	public User insert(User obj) {
 		return repo.insert(obj);
 	}
@@ -40,5 +41,7 @@ public class UserService {
 	public User fromDTO(UserDTO objDTO) {
 		return new User(objDTO.getId(),objDTO.getName(),objDTO.getEmail());
 	}
+=======
+>>>>>>> 6359cc38d06417d8a35b9af34150a6784c5d4905
 	
 }
